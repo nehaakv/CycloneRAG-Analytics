@@ -1,77 +1,47 @@
-CycloneAnalytics-RAGSystem
-📘 Overview
+# CycloneAnalytics-RAGSystem
 
-This repository contains two main modules:
+### AI-Powered Cyclone Separator Monitoring and Document-Based QA System
 
-Task 1 — Data Analytics & Forecasting:
-Processes cyclone separator sensor data to detect shutdowns, cluster machine states, identify anomalies, and generate short-term forecasts using Random Forest regression.
+This repository contains **two connected projects** developed as part of the **ExactSpace Internship Tasks**.  
+It integrates **Machine Learning**, **Anomaly Detection**, and **Retrieval-Augmented Generation (RAG)** to deliver intelligent analytics and maintenance insights for industrial cyclone separator systems.
 
-Task 2 — RAG-Based Document QA:
-Implements a Retrieval-Augmented Generation (RAG) pipeline using Hugging Face models to answer technical queries from PDF documents (maintenance manuals, operational guides, etc.).
+---
 
-🧠 Features
-🔹 Task 1 — Data Analytics & Forecasting
+## Project Overview
 
-Data preprocessing and outlier handling
+### Task 1 — Data Analytics & Forecasting  
+Performs advanced analysis on cyclone separator operational data to:
+- Detect shutdown or idle periods  
+- Cluster machine states using **K-Means**
+- Identify anomalies using **Isolation Forest**
+- Forecast temperature trends with **Random Forest Regressor**
+- Generate actionable insights and recommendations  
 
-Shutdown/idle period detection
+### Task 2 — RAG-Based Document QA System  
+Builds a **Retrieval-Augmented Generation (RAG)** pipeline using **LangChain** and **Hugging Face Transformers** to:
+- Load and process PDF technical manuals
+- Create text embeddings using `BAAI/bge-small-en-v1.5`
+- Store embeddings in a local **FAISS** vector database
+- Use `flan-t5-base` for intelligent question answering
+- Cite document sources for transparency and traceability  
 
-Machine-state clustering (K-Means)
+---
 
-Anomaly detection using Isolation Forest
+## ⚙️ Setup Instructions
 
-Temperature forecasting using Random Forest Regressor
+### 🔸 Prerequisites
+Ensure you have the following installed:
+- Python ≥ 3.9  
+- Git  
+- pip or conda  
+- (Optional) GPU for faster embeddings and model inference  
 
-Insight & recommendation generation
-
-🔹 Task 2 — Document Intelligence (RAG)
-
-Loads and chunks PDF manuals
-
-Generates embeddings using BAAI/bge-small-en-v1.5
-
-Stores embeddings locally using FAISS
-
-Uses flan-t5-base for context-aware Q&A
-
-Returns both answers and source citations
-
-⚙️ Setup Instructions
-🔸 Prerequisites
-
-Make sure you have:
-
-Python ≥ 3.9
-
-Git
-
-pip or conda
-
-GPU (optional but recommended for faster embeddings)
-
-🔸 Installation
+### 🔸 Clone the Repository
+```bash
 git clone https://github.com/<your-username>/CycloneAnalytics-RAGSystem.git
 cd CycloneAnalytics-RAGSystem
-pip install -r requirements.txt
 
-🚀 Running the Modules
-🧩 Task 1: Cyclone Data Analytics
-python task1_pipeline.py
-
-
-Input: data.xlsx (cyclone operational data)
-
-Output: Processed CSVs, plots, and insights in /Task1 folder
-
-🤖 Task 2: RAG-Based QA System
-python rag_system.py
-
-
-Input: PDFs inside /docs/ folder
-
-Output: FAISS vectorstore and interactive Q&A session
-
-📂 Folder Structure
+### Folder structure
 CycloneAnalytics-RAGSystem/
 │
 ├── Task1/
@@ -81,7 +51,7 @@ CycloneAnalytics-RAGSystem/
 │   └── insights.txt
 │
 ├── docs/
-│   └── (Technical manuals PDFs)
+│   └── (PDF manuals for RAG system)
 │
 ├── vectorstore/
 │
@@ -90,38 +60,23 @@ CycloneAnalytics-RAGSystem/
 ├── requirements.txt
 └── README.md
 
-📊 Example Outputs
-Task	Example Output
-Shutdown detection	CSV file listing start/end times
-Anomaly detection	Points marked with IsolationForest
-Forecasting	Next-hour temperature prediction
-RAG QA	“What are the maintenance steps?” → concise answer with source
-🧰 Technologies Used
+Technologies Used
 
-Languages: Python
+Languages:
+
+Python
+
 Libraries:
 
 pandas, numpy, matplotlib, scikit-learn
 
 langchain, transformers, FAISS, PyPDFLoader
 
-HuggingFaceEmbeddings, flan-t5-base
+HuggingFaceEmbeddings, flan-t5-base, torch
 
-RandomForestRegressor, KMeans, IsolationForest
+Models:
 
-🧑‍💻 Author
+BAAI/bge-small-en-v1.5 (for embeddings)
 
-Neha K V
+google/flan-t5-base (for QA generation)
 
-Passionate about AI-driven industrial solutions, predictive analytics, and applied machine learning.
-
-LinkedIn
- | GitHub
-
-🌟 Future Improvements
-
-Integrate live sensor streaming
-
-Deploy RAG system as a chatbot interface
-
-Add dashboard visualization using Plotly or Streamlit
