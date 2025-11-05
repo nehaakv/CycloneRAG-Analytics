@@ -1,0 +1,2 @@
+Total Shutdowns: 0
+Total Downtime (hours): 0.00

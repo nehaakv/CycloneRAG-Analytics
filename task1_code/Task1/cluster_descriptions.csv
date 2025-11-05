@@ -1,0 +1,5 @@
+cluster,description
+0,"Cluster 0: Cyclone_Inlet_Gas_Temp=910.26, Cyclone_Gas_Outlet_Temp=900.31, Cyclone_Outlet_Gas_draft=-199.35, Cyclone_cone_draft=-183.66, Cyclone_Inlet_Draft=-158.21, Cyclone_Material_Temp=958.65, is_shutdown=0.00"
+1,"Cluster 1: Cyclone_Inlet_Gas_Temp=789.03, Cyclone_Gas_Outlet_Temp=655.81, Cyclone_Outlet_Gas_draft=-53.79, Cyclone_cone_draft=-19.28, Cyclone_Inlet_Draft=-49.73, Cyclone_Material_Temp=761.03, is_shutdown=0.00"
+2,"Cluster 2: Cyclone_Inlet_Gas_Temp=873.38, Cyclone_Gas_Outlet_Temp=855.85, Cyclone_Outlet_Gas_draft=-211.21, Cyclone_cone_draft=-198.52, Cyclone_Inlet_Draft=-167.58, Cyclone_Material_Temp=898.21, is_shutdown=0.00"
+3,"Cluster 3: Cyclone_Inlet_Gas_Temp=902.31, Cyclone_Gas_Outlet_Temp=890.86, Cyclone_Outlet_Gas_draft=-260.70, Cyclone_cone_draft=-235.36, Cyclone_Inlet_Draft=-206.14, Cyclone_Material_Temp=936.48, is_shutdown=0.00"

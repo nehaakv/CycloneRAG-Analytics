@@ -1,0 +1,4 @@
+Insights:
+- Cyclone temperatures correlate strongly with draft values.
+- Shutdowns are concentrated in specific periods.
+- Anomalous states detected by IsolationForest highlight operational deviations.
