@@ -40,7 +40,7 @@ Ensure you have the following installed:
 ```bash
 git clone https://github.com/<your-username>/CycloneAnalytics-RAGSystem.git
 cd CycloneAnalytics-RAGSystem
-
+```
 ### Folder structure
 CycloneAnalytics-RAGSystem/
 │
@@ -79,4 +79,5 @@ Models:
 BAAI/bge-small-en-v1.5 (for embeddings)
 
 google/flan-t5-base (for QA generation)
+
 
