@@ -42,7 +42,7 @@ git clone https://github.com/<your-username>/CycloneAnalytics-RAGSystem.git
 cd CycloneAnalytics-RAGSystem
 ```
 ### Folder structure
-CycloneAnalytics-RAGSystem/
+```CycloneAnalytics-RAGSystem/
 │
 ├── Task1/
 │   ├── data.xlsx
@@ -59,7 +59,7 @@ CycloneAnalytics-RAGSystem/
 ├── task1_pipeline.py
 ├── requirements.txt
 └── README.md
-
+```
 Technologies Used
 
 Languages:
